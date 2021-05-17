@@ -77,10 +77,10 @@ func (f *File) addChart(formatSet *formatChart, comboCharts []*formatChart) {
 										SchemeClr: &aSchemeClr{
 											Val: "tx1",
 											LumMod: &attrValInt{
-												Val: intPtr(65000),
+												Val: intPtr(100000), // intPtr(65000),
 											},
 											LumOff: &attrValInt{
-												Val: intPtr(35000),
+												Val: intPtr(0), // intPtr(35000),
 											},
 										},
 									},
@@ -159,10 +159,10 @@ func (f *File) addChart(formatSet *formatChart, comboCharts []*formatChart) {
 				SolidFill: &aSolidFill{
 					SchemeClr: &aSchemeClr{Val: "tx1",
 						LumMod: &attrValInt{
-							Val: intPtr(15000),
+							Val: intPtr(100000), // intPtr(15000),
 						},
 						LumOff: &attrValInt{
-							Val: intPtr(85000),
+							Val: intPtr(0), // intPtr(85000),
 						},
 					},
 				},
@@ -1090,8 +1090,8 @@ func (f *File) drawPlotAreaSpPr() *cSpPr {
 			SolidFill: &aSolidFill{
 				SchemeClr: &aSchemeClr{
 					Val:    "tx1",
-					LumMod: &attrValInt{Val: intPtr(15000)},
-					LumOff: &attrValInt{Val: intPtr(85000)},
+					LumMod: &attrValInt{Val: intPtr(100000) /*intPtr(15000)*/},
+					LumOff: &attrValInt{Val: intPtr(0) /*intPtr(85000)*/},
 				},
 			},
 		},
@@ -1123,8 +1123,8 @@ func (f *File) drawPlotAreaTxPr() *cTxPr {
 					SolidFill: &aSolidFill{
 						SchemeClr: &aSchemeClr{
 							Val:    "tx1",
-							LumMod: &attrValInt{Val: intPtr(15000)},
-							LumOff: &attrValInt{Val: intPtr(85000)},
+							LumMod: &attrValInt{Val: intPtr(100000), /*intPtr(15000)*/},
+							LumOff: &attrValInt{Val: intPtr(0), /*intPtr(85000)*/},
 						},
 					},
 					Latin: &aLatin{Typeface: "+mn-lt"},
